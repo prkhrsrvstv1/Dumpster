@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Dumpster</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='main.js'></script>
+</head>
+<body>
+	<h1>Dumpster</h1>
+	<h2>Dump it here, for later.</h2>
+	<form id="main-form">
+		<div id="text-fieldset">
+			<fieldset>
+				<legend>Dump Text</legend>
+				<textarea id="text-contents" style="width:99%;" rows=25 maxlength="2048" placeholder="Put your text here..." wrap="soft" autofocus></textarea>
+				</div>
+				<br>
+				<input type="button" value="Dump It!" onclick="dumpText()">
+			</fieldset>
+		</div>
+		<br>
+		<h3>OR</h3>
+		<br>
+		<div id="file-fieldset">
+			<fieldset>
+				<legend>Dump File (Coming soon...)</legend>
+				<input id="file-contents" type="file" disabled>
+				<br>
+				<input type="button" value="Dump It!" onclick="dumpFile()" disabled>
+			</fieldset>
+		</div>
+	</form>
+</body>
+</html>
